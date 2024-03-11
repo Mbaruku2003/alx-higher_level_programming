@@ -18,7 +18,7 @@ int check_cycle(listint_t *list)
 	while (oncemove != NULL && twicemove != NULL && twicemove->next != NULL)
 	{
 		oncemove = oncemove->next;
-		twicemove = twicemove->next;
+		twicemove = twicemove->next->next;
 
 		if (oncemove == twicemove)
 		{
