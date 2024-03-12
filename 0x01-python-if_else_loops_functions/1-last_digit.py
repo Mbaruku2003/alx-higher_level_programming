@@ -3,7 +3,10 @@ import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 once = abs(number) % 10
-sign = "-" if number < 0 else""
+if number < 0:
+    sign = "-"
+else:
+    sign = ""
 print(f"Last digit of {number} is {sign}{once}", end=" ")
 if number % 10 > 5:
     print(f"and is greater than 5")
