@@ -12,20 +12,16 @@ if __name__ == "__main__":
     leo = int(a)
     mbaruk = int(b)
     if operator == '+':
-        result = a + b
-        print(f"{leo} {operator} {mbaruk} = {result}")
+        print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
         exit(1)
     elif operator == '-':
-        result = a - b
-        print(f"{leo} {operator} {mbaruk} = {result}")
+        print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
         exit(1)
     elif operator == '*':
-        result = a * b
-        print(f"{leo} {operator} {mbaruk} = {result}")
+        print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
         exit (1)
     elif operator == "\\":
-        result = a / b
-        print(f"{leo} {operator} {mbaruk} = {result}")
+        print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
         exit (1)
     else:
         print(f"Unknown operator. Available operators: +, -, * and /")
