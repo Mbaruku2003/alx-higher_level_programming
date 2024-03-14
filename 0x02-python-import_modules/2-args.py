@@ -3,7 +3,7 @@ if __name__ == "__main__":
     from sys import argv
     leo = len(argv) - 1
     if leo < 1:
-        print("{} arguements.".format(leo))
+        print("{} arguments.".format(leo))
     elif leo == 1:
         print("{} argument:".format(leo))
     else:
