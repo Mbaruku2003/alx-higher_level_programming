@@ -5,7 +5,7 @@ if __name__ == "__main__":
     leo = len(argv)
     if leo != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit (1)
+        exit(1)
     operator = argv[2]
     a = int(argv[1])
     b = int(argv[3])
@@ -15,8 +15,8 @@ if __name__ == "__main__":
         print(f"{a} {operator} {b} = {sub(a, b)}")
     elif operator == '*':
         print(f"{a} {operator} {b} = {mul(a, b)}")
-    elif operator == '\'':
+    elif operator == '/':
         print(f"{a} {operator} {b} = {div(a, b)}")
     else:
         print(f"Unknown operator. Available operators: +, -, * and /")
-        exit (1)
+        exit(1)
