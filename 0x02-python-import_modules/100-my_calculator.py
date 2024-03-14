@@ -7,18 +7,16 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>", end="")
         exit (1)
     operator = argv[2]
-    a = argv[1]
-    b = argv[3]
-    leo = int(a)
-    mbaruk = int(b)
+    a = int(argv[1])
+    b = int(argv[3])
     if operator == '+':
-        print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
+        print(f"{a} {operator} {b} = {add(a, b)}")
     elif operator == '-':
-        print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
+        print(f"{a} {operator} {b} = {add(a, b)}")
     elif operator == '*':
-        print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
+        print(f"{a} {operator} {b} = {add(a, b)}")
     elif operator == "\\":
-        print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
+        print(f"{a} {operator} {b} = {add(a, b)}")
     else:
         print(f"Unknown operator. Available operators: +, -, * and /")
         exit (1)
