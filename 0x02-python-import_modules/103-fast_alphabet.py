@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-print("ABCDEFGHIJKLMNOPQRSTUVWXYZ", end="")
-print()
+uppercase = ''.join(map(chr, range(65, 91)))
+print(uppercase)
