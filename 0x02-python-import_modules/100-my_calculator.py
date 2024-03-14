@@ -13,25 +13,20 @@ if __name__ == "__main__":
     mbaruk = int(b)
     if operator == '+':
         result = a + b
-        print("{} + {} = {}".format(leo, mbaruk, result), end="")
-        print()
+        print(f"{leo} {operator} {mbaruk} = {result}")
         exit(1)
     elif operator == '-':
         result = a - b
-        print("{} + {} = {}".format(leo, mbaruk, result), end="")
-        print()
+        print(f"{leo} {operator} {mbaruk} = {result}")
         exit(1)
     elif operator == '*':
         result = a * b
-        print("{} * {} = {}".format(leo, mbaruk, result), end="")
-        print()
+        print(f"{leo} {operator} {mbaruk} = {result}")
         exit (1)
     elif operator == "\\":
         result = a / b
-        print("{} / {} = {}".format(leo, mbaruk, result), end="")
-        print()
+        print(f"{leo} {operator} {mbaruk} = {result}")
         exit (1)
     else:
-        print("Unknown operator. Available operators: +, -, * and /", end="")
-        print()
+        print(f"Unknown operator. Available operators: +, -, * and /")
         exit (1)
