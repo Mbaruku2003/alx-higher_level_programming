@@ -10,4 +10,4 @@ if __name__ == "__main__":
         print("{} arguments:".format(leo))
 
     for numbering in range(leo):
-        print("{}: {:s}".format(numbering + 1, argv[numbering] + 1))
+        print("{}: {:s}".format(numbering + 1, argv[numbering + 1]))
