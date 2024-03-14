@@ -4,7 +4,7 @@ if __name__ == "__main__":
     from sys import argv
     leo = len(argv)
     if leo != 4:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>", end="")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit (1)
     operator = argv[2]
     a = int(argv[1])
@@ -12,11 +12,11 @@ if __name__ == "__main__":
     if operator == '+':
         print(f"{a} {operator} {b} = {add(a, b)}")
     elif operator == '-':
-        print(f"{a} {operator} {b} = {add(a, b)}")
+        print(f"{a} {operator} {b} = {sub(a, b)}")
     elif operator == '*':
-        print(f"{a} {operator} {b} = {add(a, b)}")
-    elif operator == "\\":
-        print(f"{a} {operator} {b} = {add(a, b)}")
+        print(f"{a} {operator} {b} = {mul(a, b)}")
+    elif operator == '\'':
+        print(f"{a} {operator} {b} = {div(a, b)}")
     else:
         print(f"Unknown operator. Available operators: +, -, * and /")
         exit (1)
