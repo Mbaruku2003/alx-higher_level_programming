@@ -13,16 +13,12 @@ if __name__ == "__main__":
     mbaruk = int(b)
     if operator == '+':
         print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
-        exit(1)
     elif operator == '-':
         print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
-        exit(1)
     elif operator == '*':
         print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
-        exit (1)
     elif operator == "\\":
         print(f"{leo} {operator} {mbaruk} = {add(a, b)}")
-        exit (1)
     else:
         print(f"Unknown operator. Available operators: +, -, * and /")
         exit (1)
