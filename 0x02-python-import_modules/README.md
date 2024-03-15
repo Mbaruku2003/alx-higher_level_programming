@@ -15,4 +15,8 @@ modulename is the name of the file we are to import from after removing the .py 
 object is the function name we are to use
 sometimes especiaally in mathematicall , os and internet modules we might have soething that looks like:
 >>> modulename.obect(what is to be operated on)
-	
+if __name__ == "__main__: makes a code inexectable even when imported, it is also important when testing a piece of code
+when importing a defined function , we specify the function name while importing and so it becomes the module name
+to use the imported function in a printing, we will call the entire function as a whole allong with its parameters parenthesised	
+we use square brackets when dealing with argv i.e argv[]
+we use int() to cast strings in python to numbers
