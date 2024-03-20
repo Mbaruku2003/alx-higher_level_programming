@@ -3,6 +3,6 @@ def simple_delete(a_dictionary, key=""):
     if a_dictionary:
         try:
             del a_dictionary[key]
-        except keyError:
+        except KeyError:
             pass
         return a_dictionary
