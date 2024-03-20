@@ -12,4 +12,4 @@ def roman_to_int(roman_string):
         except IndexError:
             pass
         number = number + temp
-        return number
+    return number
