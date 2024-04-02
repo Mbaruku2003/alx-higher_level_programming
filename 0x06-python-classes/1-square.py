@@ -1,13 +1,9 @@
-#!/user/bin/python3
-"""Method defines a square."""
+#!/usr/bin/python3
+"""module that creates squares"""
 
 
 class Square:
-    """Represents a square."""
-
+    """Defines arguenment size"""
     def __init__(self, size):
-        """Constructor.
-        Args:
-        size: length of sides of the square
-        """
+        """size of the module"""
         self.__size = size
