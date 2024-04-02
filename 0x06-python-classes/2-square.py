@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-"""Defines a square"""
-
-
-class square:
+"""We define a method Square."""
+class Square:
+    """We have created a square."""
     def __init__(self, size=0):
-        """Initialises a square.
+        """initializes the size of an object.
         Args:
-        Size (int): The size of the new square.
+        Size(int): The size of the new square.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
