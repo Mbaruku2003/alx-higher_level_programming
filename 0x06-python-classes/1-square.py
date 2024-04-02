@@ -1,11 +1,12 @@
 #!/user/bin/python3
-"""Defines a square"""
+"""Method defines a square."""
+
 
 class Square:
-    """represents a square"""
+    """Represents a square."""
 
     def __init__(self, size):
-        """constructor.
+        """Constructor.
         Args:
         size: length of sides of the square
         """
