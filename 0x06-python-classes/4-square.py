@@ -6,9 +6,10 @@ class Square:
     """Defining a method init"""
     def __init__(self, size):
         self.__size = size
-    """Defining a property."""
+
     @property
     def size(self):
+        """gets a size of a square"""
         return self.__size
 
     @size.setter
@@ -18,6 +19,7 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    """Defining a new term area."""
+
     def area(self):
+        """Defining a new term area"""
         return (self.__size * self.__size)
