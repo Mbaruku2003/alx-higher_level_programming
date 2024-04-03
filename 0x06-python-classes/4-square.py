@@ -3,13 +3,13 @@
 
 
 class Square:
-    """Defining a method init"""
+    """Defining a method init."""
     def __init__(self, size):
         self.__size = size
 
     @property
     def size(self):
-        """gets a size of a square"""
+        """Gets a size of a square."""
         return self.__size
 
     @size.setter
@@ -21,5 +21,5 @@ class Square:
         self.__size = value
 
     def area(self):
-        """Defining a new term area"""
+        """Defining a new term area."""
         return (self.__size * self.__size)
