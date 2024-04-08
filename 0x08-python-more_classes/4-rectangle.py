@@ -34,7 +34,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        return self.__height * self.__width
+        return (self.__height * self.__width)
 
     def perimeter(self):
         per_length = self.__width * 2
@@ -42,18 +42,19 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         else:
-            return per_length + per_height
+            return (per_length + per_height)
 
     def __str__(self):
         rect = []
         if self.__height == 0 or self.__width == 0:
             return ("")
-        for widthing in range(self.__width):
-            for heighting in range(self.__height):
+        for heighting in range(self.__height):
+            for widthing in range(self.__width):
                 rect.append("#")
-            if widthing != self.__width - 1:
+            if heighting != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
+
     def __repr__(self):
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
