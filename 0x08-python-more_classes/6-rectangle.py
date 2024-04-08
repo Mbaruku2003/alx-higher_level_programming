@@ -3,7 +3,9 @@
 
 
 class Rectangle:
+
     """Define an instance."""
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
@@ -60,6 +62,7 @@ class Rectangle:
             if j != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
+
     def __repr__(self):
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
