@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Define a class"""
+"""Define a class."""
 
 
 class Rectangle:
-    """ Define the attributes"""
+    """Define the attributes."""
 
     def __init__(self, width=0, height=0):
         self.height = height
@@ -45,11 +45,11 @@ class Rectangle:
             return per_length + per_height
 
     def __str__(self):
-        if self.__height == 0 or self.__width == 0:
-            return("")
         rect = []
-        for widthing in range(0, self.__width):
-            for heighting in range(0, self.__height):
+        if self.__height == 0 or self.__width == 0:
+            return ("")
+        for widthing in range(self.__width):
+            for heighting in range(self.__height):
                 rect.append("#")
             if widthing != self.__width - 1:
                 rect.append("\n")
