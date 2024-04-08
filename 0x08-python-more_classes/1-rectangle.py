@@ -6,8 +6,14 @@ class Rectangle:
     """Define the instantation method."""
 
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        """Initialises a new rectangle.
+
+        Args:
+        @width (int): the width of new triangle.
+        @height: the height of the height of the new triangle.
+        """
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
