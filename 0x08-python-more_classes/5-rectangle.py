@@ -15,10 +15,10 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        if value < 0:
-            raise ValueError("width must be >= 0")
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -47,13 +47,13 @@ class Rectangle:
     def __str__(self):
         rect = []
         if self.__width == 0 or self.__height == 0:
-            return("")
-        for heighting in range(0, self.__height):
-            for widthing in range(0, self.__width):
+            return ("")
+        for heighting in range(self.__height):
+            for widthing in range(self.__width):
                 rect.append("#")
             if heighting != self.height - 1:
                 print("\n")
-            return ("".join(rect))
+        return ("".join(rect))
 
     def __repr__(self):
         rect = "Rectangle(" + str(self.__width)
