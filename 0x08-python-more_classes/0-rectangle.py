@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-    """let ass pass to create a class without error even though nothing has been written"""
+    """let ass pass to create a class without error """
     pass
