@@ -20,7 +20,7 @@ class Rectangle:
     @property
     def width(self):
         return (self.width)
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -75,4 +75,3 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
-
