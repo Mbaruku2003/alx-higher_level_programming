@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""Define a class"""
+"""Define a class."""
 
 
 class Rectangle:
+    """Define the instantation method."""
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
 
-    """define the instantation module"""
+    """define the instantation module."""
     @property
     def width(self):
         return self.__width
@@ -22,12 +23,12 @@ class Rectangle:
         else:
             self.__width = value
 
-    """Define height module"""
+    """Define height module."""
     @property
     def height(self):
         return self.__height
 
-    """define the setter"""
+    """Define the setter."""
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
