@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """define an instance attribute"""
+    """Define an instance attribute."""
 
     def __init__(self, width=0, height=0):
         self.width = width
