@@ -8,12 +8,10 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
-    """define the instantation module."""
     @property
     def width(self):
         return self.__width
 
-    """setter"""
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -23,12 +21,10 @@ class Rectangle:
         else:
             self.__width = value
 
-    """Define height module."""
     @property
     def height(self):
         return self.__height
 
-    """Define the setter."""
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
