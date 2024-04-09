@@ -3,7 +3,9 @@
 
 
 class LockedClass:
-    """Prevent user from creating new attributes
-    that are not "firstname"
+
+    """
+    Prevent user from creating new attributes
+    that are not "firstname".
     """
     __slots__ = ["firstname"]
