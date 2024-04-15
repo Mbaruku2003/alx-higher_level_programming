@@ -3,6 +3,6 @@
 
 
 def inherits_from(obj, a_class):
-    """True or False if object isinstance."""
+    """Define an instance."""
 
     return isinstance(obj, a_class) and type(obj) != a_class
