@@ -3,4 +3,6 @@
 
 
 def lookup(obj):
+    """Returns a directory."""
+
     return dir(obj)
