@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Define a class."""
-BaseGeometry = __import__('7-base_geomtry').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
@@ -11,4 +11,4 @@ class Rectangle(BaseGeometry):
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
-        sel.__height = height
+        self.__height = height
