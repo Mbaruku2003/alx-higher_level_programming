@@ -8,4 +8,5 @@ def is_same_class(obj, a_class):
     we will use type to test wheather object
     and a-class are of same type.
     """
+
     return type(obj) == a_class
