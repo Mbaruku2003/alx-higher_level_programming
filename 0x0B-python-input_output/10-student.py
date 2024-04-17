@@ -11,8 +11,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Get a dictionary representation of the Student.
-        If attrsis a sting list, represent only attributes included."""
+        """Get a dictionary representation of the Student."""
 
         if (type(attrs) == list and
                 all(type(element) == str for element in attrs)):
