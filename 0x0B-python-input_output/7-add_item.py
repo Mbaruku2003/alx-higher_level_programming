@@ -3,20 +3,16 @@
 
 
 import sys
-import json
 
 
-def main():
-    """ getting arguenments and putting elsewhere."""
+if __name__ == "__main__":
+    save_to_json_file = __import__(5-save_to_json_file).save_to_json_file
+    load_from_json_file = __import__(6-load_from_json_file).load_from_json_file
+    
+    try:
+        items = load_from_json_file("add_item.json")
 
-    arguenments_on_command_line = sys.argv[1:]
-    a_list = []
-    a_list.extend(arguenments_on_command_line)
-    filename = "add_item.json"
-
-    save_to_json_file(a_list, filename)
-    loaded_list = load_from_json_file(filename)
-    print(loaded_list)
-
-    if __name__ == "__main__":
-        main()
+    except FileNotFoundError:
+        items = []
+        items.extend(sys.argv[1:])
+        save_to_json_file(items, "adds_item.json")
