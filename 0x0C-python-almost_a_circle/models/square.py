@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Define the class square."""
-from .rectangle import Rectangle
+from rectangle import Rectangle
 
 class Square(Rectangle):
     """Define the constructor."""
