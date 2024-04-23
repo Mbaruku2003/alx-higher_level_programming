@@ -2,8 +2,9 @@
 """Define our class."""
 import json
 
+
 class Base:
-    """ Define the private attribute."""
+    """Define the private attribute."""
 
     __nb_objects = 0
 
@@ -43,7 +44,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         if dictionary and dictionary != {}:
-            if cls.__name__ is "Rectangle":
+            if cls.__name__ == "Rectangle":
                 dummy = cls(1, 1)
             else:
                 dummy = cls(1)
@@ -53,6 +54,7 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         filename = "{}.json".format(cls.__name__)
+
         try:
             with open(filename, "r") as json_fl:
                 list_dicts = Base.from_json_string(json_fl.read())
@@ -60,6 +62,7 @@ class Base:
                 for writing in list_dicts:
                     list_instances.append(cls.create(**writing))
                     return list_instances
+
         except FileNotFoundError:
             return []
 
@@ -86,6 +89,7 @@ class Base:
                 for d in list_dicts:
                     list_of_instances.append(cls, create(**d))
                 return list_of_instances
+
         except FileNotFoundError:
             return []
 
