@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Define the class square."""
-from rectangle import Rectangle
+from .base import Base
+from .rectangle import Rectangle
+
 
 class Square(Rectangle):
     """Define the constructor."""
@@ -13,7 +15,8 @@ class Square(Rectangle):
     def __str__(self):
         """Define the constructor."""
 
-        return ("[square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width))
+        return ("[square] ({}) {}/{} - {}".
+                format(self.id, self.x, self.y, self.width))
 
     @property
     def size(self):
@@ -37,7 +40,7 @@ class Square(Rectangle):
                 if index == 1:
                     self.size = value
                 if index == 2:
-                   self.x = value
+                    self.x = value
                 if index == 3:
                     self.y = value
                 else:
@@ -52,16 +55,13 @@ class Square(Rectangle):
                 elif key == "x":
                     self.x = value
                 elif key == "y":
-                    self.y =  value
+                    self.y = value
                 else:
                     break
 
     def to_dictionary(self):
         """Define the constructor."""
 
-        dictionary = {"id": self.id,
-                "x": self.x,
-                "size": self.size,
-                "y": self.y
-                }
+        dictionary = {
+                "id": self.id, "x": self.x, "size": self.size, "y": self.y}
         return dictionary
