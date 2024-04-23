@@ -15,8 +15,8 @@ class Square(Rectangle):
     def __str__(self):
         """Define the constructor."""
 
-        return ("[square] ({}) {}/{} - {}".
-                format(self.id, self.x, self.y, self.size))
+        return "[square] ({}) {}/{} - {}".
+                format(self.id, self.x, self.y, self.size)
 
     @property
     def size(self):
