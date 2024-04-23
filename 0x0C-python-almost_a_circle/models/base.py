@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """Define our class."""
 import json
-import turtle
+import csv
+from turtle import *
+
 
 class Base:
     """Define the private attribute."""
@@ -54,17 +56,17 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         filename = "{}.json".format(cls.__name__)
-
-        try:
-            with open(filename, "r") as json_fl:
-                list_dicts = Base.from_json_string(json_fl.read())
-                list_instances = []
-                for writing in list_dicts:
-                    list_instances.append(cls.create(**writing))
-                    return list_instances
-
-        except FileNotFoundError:
-            return []
+        with open(filename, "r") as csvf:
+            if list_objs is None or list_objs ==[]:
+                csvf.write("[]")
+            else:
+                if cls.__name__ == "Rectangle":
+                    fieldnames = ["id", "width", "height", "x", "y"]
+                else:
+                    fieldnames = ["id", "size", "x", "y"]
+                writer = csv.DictWriter(csvf, fieldnames=fieldnames)
+        for obj in list_objs:
+            writer.writerow(obj.to_dictionary())
 
     @classmethod
     def load_from_file_csv(cls):
@@ -95,9 +97,29 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        turt = turtle.Turtle()
-        turt.screen.bigcolor("#3399FF")
-        turt.pensize(4)
-        turt.shape("turtle")
+        screen = Screen()
+        screen.title("Rectangles and Squares")
+        #create a turtle object
+        turt = Turtle()
 
-        turtle.exitonClick()
+        #Draw Rectangles
+        for rect in list_rectangles:
+            turt = penup()
+            turt.goto(rect.x, rect.y)
+            turt.pendown()
+            turt.color("blue")
+            for _ in range(2):
+                turt.forward(rect.width)
+                turt.left(90)
+                turt.forward(rect.height)
+                turt.left(90)
+        for square in list_squares:
+            turt.penup()
+            turt.goto(square.x, square.y)
+            turt.pendown()
+            turt.color("red")
+            for _ in range(4):
+                turt.forward(square.size)
+                turt.left(90)
+        turt.hideturtle()
+        screen.mainloop()

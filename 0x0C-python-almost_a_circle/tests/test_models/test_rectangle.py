@@ -16,3 +16,8 @@ class Test_Rectangle(unittest.TestCase):
         self.assertEqual(rect.x, 1)
         self.assertEqual(rect.y, 2)
         self.assertEqual(rect.id, 12)
+
+    def test__str__(self):
+        r1 = Rectangle(4, 6, 2, 1, 12)
+        leo = f"[Rectangle] (12) 2/1 - 4/6"
+        self.assertEqual(r1.str, leo)
