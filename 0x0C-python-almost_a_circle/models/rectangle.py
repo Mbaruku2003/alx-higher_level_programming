@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Define the class."""
-from .base import Base
-
+from models.base import Base
 
 class Rectangle(Base):
     """Define rectangle."""
