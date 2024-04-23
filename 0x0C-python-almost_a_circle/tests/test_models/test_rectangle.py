@@ -1,3 +1,4 @@
+#/usr/bin/python3
 """Define the method used."""
 import unittest
 from models.base import Base
@@ -8,9 +9,10 @@ class Test_Rectangle(unittest.TestCase):
     """Define  the test constructor."""
 
     def test_constractor(self):
-        r1 = Rectangle(10, 2)
-        self.assertEqual(r1.id, 1)
-        r2 = Rectangle(2, 10)
-        self.assertEqual(r2.id, 2)
-        r3 = Rectangle(10, 2, 0, 0, 12)
-        self.assertEqual(r3.id, 12)
+        """DEfinition of constructor."""
+        rect = Rectangle(width =10, height=5, x=1, y=2, id=12)
+        self.assertEqual(rect.width, 10)
+        self.assertEqual(rect.height, 5)
+        self.assertEqual(rect.x, 1)
+        self.assertEqual(rect.y, 2)
+        self.assertEqual(rect.id, 12)

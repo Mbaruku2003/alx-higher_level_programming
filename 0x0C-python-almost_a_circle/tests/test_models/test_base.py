@@ -7,6 +7,8 @@ class test_Base(unittest.TestCase):
     """Define constractor test case."""
 
     def test_init(self):
+        """Testing for test_init."""
+
         b1 = Base()
         self.assertEqual(b1.id, 1)
         b2 = Base()
