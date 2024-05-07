@@ -20,3 +20,5 @@ when importing a defined function , we specify the function name while importing
 to use the imported function in a printing, we will call the entire function as a whole allong with its parameters parenthesised	
 we use square brackets when dealing with argv i.e argv[]
 we use int() to cast strings in python to numbers
+we can use from filex import ... to import a certain function from a file, however, we woulpdnt mention the .py in file x
+argv is found in sys module andf is used to check for arguenment passed to command line
