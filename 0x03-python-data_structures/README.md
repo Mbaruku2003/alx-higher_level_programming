@@ -24,5 +24,6 @@ QUESTION1:
 QUESTION 2:
 - i learnt that when dealing with strings we should first compare with the if statement to test wheather the list is empty
 - i lernt that lists variable[index] = value ;makes the lists at a particular index change its value
-QUESTION 3:
-
+	TOTAL_LESSONS
+for loops iterate through each element of an array
+{:d} shows that the format expects an integer
