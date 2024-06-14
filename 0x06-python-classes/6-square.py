@@ -5,14 +5,14 @@
 class Square:
     """defining an instant"""
     def __init__(self, size=0, position=(0, 0)):
-        self._size = size
-        self._position = position
+        self.__size = size
+        self.__position = position
 
     @property
     def size(self):
         """Gets the valu of size."""
 
-        return self._size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -23,37 +23,37 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
-            self._size = value
+            self.__size = value
 
     @property
     def position(self):
         """Gets the position."""
 
-        return self._position
+        return self.__position
 
     @position.setter
     def position(self, value):
         """Sets the position value."""
 
-        if (not isinstance(value, tuple) or len(value) != 2 or
-                not all(isinstance(num, int) for num in value) or
-                not all(num >= 0 for num in value)):
+        if (isinstance(value, tuple) and len(value) == 2 and
+                all(isinstance(num, int) for num in value) and
+                all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
-        self._position = value
+        self.__position = value
 
     def area(self):
         """Define the area."""
 
-        return (self._size * self._size)
+        return (self.__size * self.__size)
 
     def my_print(self):
         """Prints in stdout the square with the character #."""
 
-        if self._size == 0:
-            print("")
+        if self.__size == 0:
+            print()
             return
 
-        for i in range(self._position[1]):
-            print("")
+        for i in range(self.__position[1]):
+            print()
         for i in range(self._size):
-            print(" " * self._position[0] + "#" * self._size)
+            print(" " * self.__position[0] + "#" * self.__size)
