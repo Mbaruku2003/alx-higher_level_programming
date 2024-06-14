@@ -5,8 +5,8 @@
 class Square:
     """defining an instant"""
     def __init__(self, size=0, position=(0, 0)):
-        self.size = size
-        self.position = position
+        self._size = size
+        self._position = position
 
     @property
     def size(self):
