@@ -11,6 +11,6 @@ else
 	while (i < x)
 	{
 		console.log('C is fun');
-		i++
+		i++;
 	}
 }
