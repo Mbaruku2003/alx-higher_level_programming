@@ -1,6 +1,6 @@
 #!/usr/bin/node
 /*  prints My number: <first argument converted in integer> */
-if (process.argv[2] === undefined || process.argv[2] === isNaN())
+if (process.argv[2] === undefined || isNaN(process.argv[2]))
 {
 	console.log('Not a number');
 }
