@@ -12,3 +12,8 @@ just like self in python in javascript we use "this" in constructors o take an i
 	2-rectangle.js
 programming has shorter was of doing something for example instead of saying <= it is similar we canjust use > symbol if dealing with statements being falsified
 self is not present n javascript as a keyword
+	3-rectangle.js
+"this" is a keyword used to take the value in instantation
+field names can be inherited in other methods
+for loops can take initialisation with the first term let followed by a word
+after that a condition is set followed by a restriction
