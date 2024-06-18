@@ -17,3 +17,9 @@ self is not present n javascript as a keyword
 field names can be inherited in other methods
 for loops can take initialisation with the first term let followed by a word
 after that a condition is set followed by a restriction
+	5-rectangle.js
+extends is used to inherit a class
+super can be used to change the fields for example rectangle and square have been transformed to size, size in super
+const Rectangle is used to create an instance to import a file
+we used requite in place of import
+a parameter to the require can be the file we want to import
