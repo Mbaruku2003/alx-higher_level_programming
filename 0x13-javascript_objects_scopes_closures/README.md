@@ -11,3 +11,4 @@ i learnt that constructors parameters are thevalue of fields in the same constru
 just like self in python in javascript we use "this" in constructors o take an instance of the constructor
 	2-rectangle.js
 programming has shorter was of doing something for example instead of saying <= it is similar we canjust use > symbol if dealing with statements being falsified
+self is not present n javascript as a keyword
