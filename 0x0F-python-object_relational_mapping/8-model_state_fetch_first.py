@@ -1,0 +1,15 @@
+#!/usr/binpython3
+"""prints the first State object from the database hbtn_0e_6_usa."""
+import sys
+from model_state import Base, State
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+if __name__ == "__main__":
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}')
+    Base.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
+    object_data = Session.query(State).first()
+    if object_data is None:
+        print(Nothing)
+    else:
+        print(object_data.id, object_data.name, sep=": ")
