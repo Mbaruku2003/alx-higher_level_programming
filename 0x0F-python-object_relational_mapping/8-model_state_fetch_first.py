@@ -18,5 +18,3 @@ if __name__ == "__main__":
             print("Nothing")
         else:
             print(object_data.id, object_data.name, sep=": ")
-    finally:
-        session.close()
