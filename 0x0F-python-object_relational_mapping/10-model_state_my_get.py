@@ -13,7 +13,7 @@ if __name__ == "__main__":
     if len(inputs) < 5 or ";" in inputs[4]:
         exit(1)
 
-    connection_string = 'mysql+mysqldb://():()@localhost:3306/{}'
+    connection_string = 'mysql+mysqldb://{}:{}@localhost:3306/{}'
     engine = create_engine(connection_string.format
                            (inputs[4], inputs[2], inputs[3]))
     Session = sessionmaker(engine)
