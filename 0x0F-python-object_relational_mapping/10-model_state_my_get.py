@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """prints the State object with the name passed as argument"""
 
+
 if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.ext.declarative import declarative_base
@@ -24,4 +25,4 @@ if __name__ == "__main__":
         print('Not found')
     else:
         print(my_query[0].id)
-session.close()
+    session.close()
