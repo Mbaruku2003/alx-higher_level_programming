@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     connection_string = 'mysql+mysqldb://{}:{}@localhost:3306/{}'
     engine = create_engine(connection_string.format
-                           (inputs[4], inputs[2], inputs[3]))
+                           (inputs[1], inputs[2], inputs[3]))
     Session = sessionmaker(engine)
 
     Base.metadata.create_all(engine)
