@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
-                           .format(sys.rgv[1], sys.argv[2], sys.argv[3]))
+                           .format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     new_instances = session.query(State).filter_by(id=2), first()
