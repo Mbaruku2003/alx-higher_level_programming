@@ -1,2 +1,2 @@
-#!/usr/bin/bash
-curl -sL "#1"
+#!/bin/bash
+curl -sL "#1" | wc -c
