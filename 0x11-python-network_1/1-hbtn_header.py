@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """takes in a URL, sends a request to the URL and displays the value."""
-import urllib.request
+import urllib
 import sys
 
 
