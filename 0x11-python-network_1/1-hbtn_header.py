@@ -8,4 +8,5 @@ url = sys.argv[1]
 with urllib.request.urlopen(url) as response:
     headers = response.headers
     x_requested_id = headers.get('X-Request-Id')
-print(x_requested_id)
+if __name__ == "__main__":
+    print(x_requested_id)
