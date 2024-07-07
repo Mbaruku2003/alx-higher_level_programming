@@ -4,7 +4,7 @@ import sys
 import requests
 
 
-def send_post_rquests(url, email):
+def send_post_requests(url, email):
     payload = {'email': email}
     response = requests.post(url, data=payload)
     print(response.text)
@@ -13,3 +13,4 @@ def send_post_rquests(url, email):
 if __name__ == "__main__":
     url = sys.argv[1]
     email = sys.argv[2]
+    send_post_requests(url, email)
