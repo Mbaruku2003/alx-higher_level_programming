@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 """ Takes in a URL, sends a request to the URL and displays the value. """
-
-
 import urllib.request
 import sys
-url = sys.argv[1]
-with urllib.request.urlopen(url) as response:
-    headers = response.headers
-    x_requested_id = headers.get('X-Request-Id')
+
+
+def fetch_request_id(url):
+    request = urllib.request.Request(url)
+    with urllib.request.urlopen(request) as response:
+        request_id = response.headers.get('X-Request-Id')
+        if request_id:
+            print(request_id)
 if __name__ == "__main__":
-    print(x_requested_id)
+    url = sys.argv[1]
+    fetch_request_id(url)
