@@ -19,4 +19,4 @@ def search_for_user(letter):
 
 if __name__ == "__manin__":
     letter = sys.argv[1] if len(sys.argv) > 1 else ""
-    search_user(letter)
+    search_for_user(letter)
