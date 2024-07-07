@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Takes in a URL, sends a request to the URL and displays the value of the variable. """
+""" Takes in a URL, sends a request to the URL. """
 import sys
 import requests
 
