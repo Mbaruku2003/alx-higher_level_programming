@@ -7,7 +7,9 @@ if (!content || !thefile) {
   process.exit(1);
 }
 fs.writeFile(thefile, content, 'utf8', (err) => {
-  if (err) {
-    console.error(err);
-  }
+	if (err) {
+		console.error(err);
+	} else {
+		process.exit(1);
+	}
 });
