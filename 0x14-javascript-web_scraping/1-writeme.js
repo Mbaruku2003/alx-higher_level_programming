@@ -6,7 +6,7 @@ if (!content || !thefile) {
   console.error();
   process.exit(1);
 }
-fs.writeFile(thefile, 'utf8', (err) => {
+fs.writeFile(thefile, content, 'utf8', (err) => {
   if (err) {
     console.error(err);
   }
