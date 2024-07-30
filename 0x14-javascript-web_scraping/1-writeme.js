@@ -9,5 +9,7 @@ if (!content || !thefile) {
 fs.writeFile(thefile, content, 'utf8', (err) => {
   if (err) {
     console.error(err);
+  } else {
+	  console.log(content);
   }
 });
