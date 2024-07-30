@@ -6,7 +6,7 @@ if (!content || !thefile) {
   console.error();
   process.exit(1);
 }
-fs.readFile(thefile, utf - 8, (err) => {
+fs.readFile(thefile, utf-8, (err) => {
   if (err) {
     console.error(err);
   } else {
