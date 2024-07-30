@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const fs = require('fs');
-const thefile = process.argv(2);
-const content = process.argv(3);
+const thefile = process.argv[2];
+const content = process.argv[3];
 if (!content || !thefile) {
   console.error();
   process.exit(1);
