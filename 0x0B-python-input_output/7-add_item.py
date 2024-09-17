@@ -3,16 +3,19 @@
 
 
 import sys
+import os
 
+# import the existing functions
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-if __name__ == "__main__":
-    save_to_json_file = __import__(5-save_to_json_file).save_to_json_file
-    load_from_json_file = __import__(6-load_from_json_file).load_from_json_file
-    
-    try:
-        items = load_from_json_file("add_item.json")
-
-    except FileNotFoundError:
-        items = []
-        items.extend(sys.argv[1:])
-        save_to_json_file(items, "adds_item.json")
+# defining the file name
+filename = "add_item.json"
+# try loading the existing lst or new file.
+if ospath.exists(filename):
+    items = load_from_json_file(filename)
+else:
+    items = []
+# add all arguenments from cmd
+items.extend(sys.srgv[1:])
+save_to_jon_file(items, filename)
